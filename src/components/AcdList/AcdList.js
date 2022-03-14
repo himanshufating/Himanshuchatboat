@@ -1,9 +1,10 @@
 
 import React from "react";
-import "./LinkList.css";
 
-const LinkList = (props) => {
-  const linkMarkup = props.poptions.map((link) => (
+import "./AcdList.css";
+
+const AcdList = (props) => {
+  const linkMarkup = props.acdoptions.map((link) => (
     <li key={link.id} className="link-list-item">
         {link.text}
     </li>
@@ -12,4 +13,4 @@ const LinkList = (props) => {
   return <ul className="link-list">{linkMarkup}</ul>;
 };
 
-export default LinkList;
+export default AcdList;
